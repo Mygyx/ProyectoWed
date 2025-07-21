@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aventones</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+    <body>
+        <header>
+            <div class="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+            <nav>
+                <div>
+                    <a href="../searchRides/searchRides.html">Home</a>
+                    <a href="../myRides/myRides.html" class="active">Rides</a>
+                    <a href="../Bookings/Bookings.html">Bookings</a>
+                </div>  
+                
+                <div class="input-container">
+                    <img src="iconoLupa.png" alt="iconoLupa">
+                    <input type="text" placeholder="Search...">
+                </div>
+            <div class="profile-icon">
+                <img src="perfilIcono.png" alt="profile icon" class="IconoPerfil">
+                <div class="dropdown">
+                    <a href="../login/login.html">Logout</a>
+                    <a href="../Configuration/Configuration.html">Settings</a>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Ride Details</h2>
+            <hr class="separator">
+            
+            <form>
+                <div class="contenedorSuperior">
+                    <div class="contenedorPerfil">
+                        <img src="perfilIcono.png" alt="profile icon" class="IconoPerfil">
+                        <span class="nombreUsuario">Barroyo</span>
+                    </div>
+
+                    <div class="div1">
+                        <div>
+                            <label>Departure From</label>
+                            <span>Quesada</span>
+                        </div>
+                        
+                        <div>
+                            <label>Arrive to</label>
+                            <span>Zarcero</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <label>Days</label>
+                           
+                        <div class="checkbox-days">
+                            
+                            <label><input type="checkbox" name="Mon"> Mon</label>
+                            <label><input type="checkbox" name="Tue"> Tue</label>
+                            <label><input type="checkbox" name="Wed"> Wed</label>
+                            <label><input type="checkbox" name="Thu"> Thu</label>
+                            <label><input type="checkbox" name="Fri"> Fri</label>
+                            <label><input type="checkbox" name="Sat"> Sat</label>
+                            <label><input type="checkbox" name="Sun"> Sun</label>
+                        </div>    
+                    </div>
+
+                    <div class="div3">
+                        <div class="div3-izquierda">
+                            <label for="hora">Time</label>
+                            <input type="time" id="hora" name="hora" value="10:00">
+                        </div>
+                        
+                        <div class="div3-centro">
+                            <label for="seats">Seats</label>
+                            <input type="number" id="seats" name="seats" value="2" min="1" max="10">
+                        </div>
+
+                        <div class="div3-derecha">
+                            <label for="fee">Fee</label>
+                            <input type="number" id="fee" name="fee" value="15" min="0">
+                        </div>
+                    </div>
+                    <div class="div-label">
+                         <label>Vehicle Details</label>
+                    </div>
+                    
+                    <div class="div4">
+                        <div class="div4-izquierda">
+                            <label for="Make">Vehicle Type</label>
+                            <select name="Make" id="Make">
+                                <option value="Nissan">Nissan</option>
+                                <option value="Toyota">Toyota</option>
+                            </select>
+                        </div>
+                        <div class="div4-centro">
+                            <label for="Model">Model</label>
+                            <input type="text" id="Model" name="Model" required placeholder="Model">
+                        </div>
+                        <div class="div4-derecha">
+                            <label for="Year">Year</label>
+                            <input type="number" id="Year" name="Year" value="2023" min="1980" max="2025">
+                        </div>
+
+                        
+                    </div>
+                    <div class="div6">
+                        <a href="NewRide.html">Cancel</a>
+                        <button class="button-create">Request</button>
+                    </div>
+                </div>
+            </form>
+
+        </main>
+        <footer>
+            <hr class="separator">
+            <div class="footer-links">
+                <a href="../searchRides/searchRides.html">Home</a>
+                <a href="../myRides/myRides.html">Rides</a>
+                <a href="../Bookings/Bookings.html">Bookings</a>
+                <a href="../Configuration/Configuration.html">Settings</a>
+                <a href="../login/login.html">Login</a>
+                <a href="../Register/register.html">Register</a>
+            </div>
+                <div class="div5">
+                <p class="copyright">© Aventones.com</p>
+            </div>          
+        </footer>
+    </body>
+</html>

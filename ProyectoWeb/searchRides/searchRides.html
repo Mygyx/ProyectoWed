@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Aventones</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+    <body>
+        <header>
+            <div class="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+            <nav>
+                <div>
+                    <a href="../searchRides/searchRides.html" class="active">Home</a>
+                    <a href="../myRides/myRides.html">Rides</a>
+                    <a href="../Bookings/Bookings.html">Bookings</a>
+                </div>  
+                <div class="input-container">
+                    <img src="iconoLupa.png" alt="iconoLupa">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <img src="perfilIcono.png" alt="profile icon" class="IconoPerfil">
+                    <div class="dropdown">
+                        <a href="../login/login.html">Logout</a>
+                        <a href="../EditPerfile/editPerfile.html">Profile</a>
+                        <a href="../Configuration/Configuration.html">Settings</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Search rides</h2>
+            <hr class="separator">
+            <form>
+                <div class="divSuperior">
+                    <div class="contenedorIzquierda">
+                        <label for="ciudadOrigen">From</label>
+                        <select name="ciudadOrigen" id="ciudadOrigen">
+                        <option value="san_jose">San Jose</option>
+                        <option value="alajuela">Alajuela</option>
+                        <option value="cartago">Cartago</option>
+                        </select>
+                    </div>
+
+                    <div class="contenedorDerecha">
+                        <label for="ciudadDestino">To</label>
+                        <select name="ciudadDestino" id="ciudadDestino">
+                        <option value="san_jose">San Jose</option>
+                        <option value="alajuela">Alajuela</option>
+                        <option value="cartago">Cartago</option>
+                            
+                        </select>
+                        <button type="submit">Find Rides</button>
+                    </div>
+                    
+                </div>
+                <div class="contenedorCheckbox">
+                        
+                    <span>Days</span>
+                        
+                    <label><input type="checkbox" name="Mon"> Mon</label>
+                        <label><input type="checkbox" name="Tue"> Tue</label>
+                        <label><input type="checkbox" name="Wed"> Wed</label>
+                        <label><input type="checkbox" name="Thu"> Thu</label>
+                        <label><input type="checkbox" name="Fri"> Fri</label>
+                        <label><input type="checkbox" name="Sat"> Sat</label>
+                        <label><input type="checkbox" name="Sun"> Sun</label>
+                
+                </div>
+            </form>
+            <div class="contenedorTabla">
+                <table class="tablaSearch">
+                    <thead>
+                        <tr>
+                            <th>Driver</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Seats</th>
+                            <th>Car</th>
+                            <th>Free</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tdPerfil">
+                                <img src="perfilIcono.png" alt="profile icon" class="IconoPerfilTD">
+                                <span>Barroyo</span>
+                            </td>
+                            <td class="tdFrom">San jose</td>
+                            <td>San Jose</td>
+                            <td>2</td>
+                            <td>Toyota Corolla 2020</td>
+                            <td>$5</td>
+                            <td class="tdTo">Request</td>
+                        </tr>
+                        <tr>
+                            <td  class="tdPerfil">
+                                <img src="perfilIcono.png" alt="profile icon" class="IconoPerfilTD">
+                                <span>Barroyo</span>
+                            </td>
+                            <td class="tdFrom">San jose</td>
+                            <td>San Jose</td>
+                            <td>2</td>
+                            <td>Toyota Corolla 2020</td>
+                            <td>$5</td>
+                            <td class="tdTo">Request</td>
+                        </tr>
+                        <tr>
+                            <td  class="tdPerfil">
+                                <img src="perfilIcono.png" alt="profile icon" class="IconoPerfilTD">
+                                <span>Barroyo</span>
+                            </td>
+                            <td class="tdFrom">San jose</td>
+                            <td>San Jose</td>
+                            <td>2</td>
+                            <td>Toyota Corolla 2020</td>
+                            <td>$5</td>
+                            <td class="tdTo">Request</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="iMapa">                
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.191552243777!2d-84.43219132520176!3d10.326550189796183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0658d0faf2397%3A0x18cbb88f08d63449!2s8HGC%2BJ54%2C%20Provincia%20de%20Alajuela%2C%20Cd%20Quesada%2C%20Barrio%20Maracan%C3%A1!5e0!3m2!1ses!2scr!4v1752379108544!5m2!1ses!2scr" 
+                    height="600" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </main>
+        <footer>
+            <hr class="separator">
+            <div class="footer-links">
+                <a href="../searchRides/searchRides.html">Home</a>
+                <a href="../myRides/myRides.html">Rides</a>
+                <a href="../Bookings/Bookings.html">Bookings</a>
+                <a href="../Configuration/Configuration.html">Settings</a>
+                <a href="../login/login.html">Login</a>
+                <a href="../Register/register.html">Register</a>
+            </div>
+                <div class="div5">
+                <p class="copyright">© Aventones.com</p>
+            </div>          
+        </footer>
+    </body>
+</html>

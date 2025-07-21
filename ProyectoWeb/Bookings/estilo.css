@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 380px;
+  height: 150px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+nav input {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 340px;
+}
+
+.input-container img {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.input-container input {
+  padding-left: 55px; /* Espacio para la lupa */
+  height: 45px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+
+.IconoPerfil{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.separator {
+  width: 200px;
+  margin: 10px auto 30px;
+  border: 1px solid #ccc;
+}
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #4a90e2;
+}
+
+
+footer{
+    margin-top: 3%;
+    height: 100px;
+    width: 100%;
+    
+ 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+  
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-info, .ride-info, .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .separator{
+    width: auto;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* importante: sin espacio entre elementos */
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 15px;
+  border-left: 1px solid #999;
+}
+
+.footer-links a:first-child {
+  border-left: none;
+}
+.div5{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #666;
+}
+#a-clickHere {
+    position: relative;
+    left: 5px; /* Mueve 20px hacia la izquierda */
+}
+
+.form-container{
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.div1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div1 input {
+    width: 330px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.div2 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.div2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div2 input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.div3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+
+.div3 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div3 input {
+    width: 330px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+
+
+.div4 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.div4 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div4 input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.div1 select{
+    width: 330px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.div7 {
+  padding-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.div7 button {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.div7 a {
+    color: #4a90e2;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-top: 2.5%;
+}
+
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.IconoPerfil {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* para que quede justo debajo del ícono */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 130px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-icon:hover .dropdown,
+.profile-icon:has(.dropdown:hover) .dropdown {
+  display: block;
+}
+
+
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.IconoPerfil {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* para que quede justo debajo del ícono */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 130px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-icon:hover .dropdown,
+.profile-icon:has(.dropdown:hover) .dropdown {
+  display: block;
+}

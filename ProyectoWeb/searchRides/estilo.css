@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 380px;
+  height: 150px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+nav input {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 340px;
+}
+
+.input-container img {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.input-container input {
+  padding-left: 55px; /* Espacio para la lupa */
+  height: 45px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+
+.IconoPerfil{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.separator {
+  width: 180px;
+  margin: 10px auto 30px;
+  border: 1px solid #ccc;
+}
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 5px solid #4a90e2;
+}
+
+.divSuperior {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 40px;
+  
+}
+
+
+select {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.divSuperior label{
+    margin-top: 10px;
+}
+
+.divSuperior > div {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.divSuperior label {
+  margin-bottom: 14px;
+  position: static; /* ya no absoluto */
+}
+
+.contenedorIzquierda {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contenedorDerecha {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.contenedorDerecha button {
+  width: 150px;
+  height: 41px;
+  background-color: #4a90e2;
+  border: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.contenedorCheckbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 215px;
+}
+
+
+.contenedorCheckbox label {
+  display: flex;
+  align-items: center;
+  gap: 5px;        /* ← espacio entre checkbox y texto */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contenedorTabla {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+  
+}
+
+.tablaSearch {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+th {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.miTabla th {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.tdFrom, .tdTo {
+  color: #007bff;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.iMapa{
+  margin-top: 20px;
+  width: 100%;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+
+footer{
+    margin-top: 3%;
+    height: 100px;
+    width: 100%;
+    
+ 
+}
+
+footer .separator{
+    width: auto;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* importante: sin espacio entre elementos */
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 15px;
+  border-left: 1px solid #999;
+}
+
+.footer-links a:first-child {
+  border-left: none;
+}
+.div5{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #666;
+}
+#a-clickHere {
+    position: relative;
+    left: 5px; /* Mueve 20px hacia la izquierda */
+}
+.IconoPerfilTD{
+    width: 40px;
+    height: 40px; 
+}
+
+.tdPerfil {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.tdPerfil img {
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.tdPerfil span {
+  vertical-align: middle;
+  line-height: 32px; /* igual al alto de la imagen */
+}
+
+
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.IconoPerfil {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* para que quede justo debajo del ícono */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 130px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-icon:hover .dropdown,
+.profile-icon:has(.dropdown:hover) .dropdown {
+  display: block;
+}
+

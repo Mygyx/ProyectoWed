@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 380px;
+  height: 150px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  align-items: center;
+  padding: 15px 20px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+nav a.active {
+  background-color: #4a90e2;
+  color: white;
+}
+
+nav input {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 340px;
+}
+
+.input-container img {
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.input-container input {
+  padding-left: 55px; /* Espacio para la lupa */
+  height: 45px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+
+.IconoPerfil{
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 5px solid #4a90e2;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.separator {
+  width: 130px;
+  margin: 10px auto 30px;
+  border: 1px solid #ccc;
+}
+
+.new-ride-btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+  
+}
+
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer{
+    margin-top: 3%;
+    height: 100px;
+    width: 100%;
+    
+ 
+}
+
+footer .separator{
+    width: auto;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* importante: sin espacio entre elementos */
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  padding: 0 12px;
+  font-weight: 500;
+  font-size: 15px;
+  border-left: 1px solid #999;
+}
+
+.footer-links a:first-child {
+  border-left: none;
+}
+.div5{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #666;
+}
+#a-clickHere {
+    position: relative;
+    left: 5px; /* Mueve 20px hacia la izquierda */
+}
+
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.IconoPerfil {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* para que quede justo debajo del ícono */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 130px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0;
+}
+
+.profile-icon:hover .dropdown,
+.profile-icon:has(.dropdown:hover) .dropdown {
+  display: block;
+}
